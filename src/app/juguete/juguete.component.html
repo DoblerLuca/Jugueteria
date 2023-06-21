@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 class="mt-2">{{juguete.nombre | uppercase}}</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ juguete.foto }}" width="100%" alt="">
+        </div>
+
+        <div class="col-md-8">
+            <h3>{{juguete.nombre  | titlecase}}</h3>
+            <hr>
+            <h4 class="mt-3 mb-3">{{juguete.precio}}$</h4>
+            <p>{{juguete.descripcion}}</p>
+        </div>
+
+    </div>
+    <a href="#" type="button" class="btn btn-danger mt-3 mb-3">Volver</a>
+</div>
+

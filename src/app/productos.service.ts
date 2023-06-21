@@ -58,4 +58,8 @@ export class ProductosService {
     return this.productos;
   }
 
+  getProducto(idx:number){
+    return this.productos[idx];
+  }
+
 }
