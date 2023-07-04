@@ -2,11 +2,18 @@
     <div class="row g-4">
         <div class="col-6 col-md-4 col-lg-3" *ngFor="let juguetes of productos; let i = index">
             <div class="card border border-black">
-                <img src="{{ juguetes.foto }}" class="card-img-top" alt="...">
+                <img src="{{ juguetes.foto }}" class="card-img-top" height="250px" alt="...">
                 <div class="card-body bg-dark text-white">
                 <h5 class="card-title">{{juguetes.nombre}}</h5>
                 <p class="card-text">{{juguetes.precio}}$</p>
-                <button (click)="verJuguetes(i)" type="button" class="btn btn-outline-primary">Ver mas...</button>
+                <div class="row">
+                    <div class="col">
+                        <button (click)="verJuguetes(i)" type="button" class="btn btn-primary">Ver mas...</button>
+                    </div>
+                    <div class="col text-end">
+                        <button (click)="agregarCarrito(juguetes, i)" type="button" class="btn btn-success ">Añadir <img src="../assets/anadir-a-la-cesta.png" class="align-text-top" width="20" height="20" alt=""></button>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

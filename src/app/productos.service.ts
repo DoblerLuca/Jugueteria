@@ -10,14 +10,14 @@ export class ProductosService {
     {
       nombre: "Auto De Carrera A Radio Control Usb Luz Y Humo",
       descripcion: "Escala: 1:20, Tracción: 4x2, Material: PVC, Alcance: 10m, Batería de litio: 3.7v 500 mAh, Batería Recargable",
-      precio: 11.199,
+      precio: 11199,
       foto: "../assets/auto.png"
     },
     {
       nombre: "Cocinita De Juguete Cocina De Madera Infantil Juego Chicos",
       descripcion: "Estructura realizada en madera Fibrofacil de 5,5mm super resistente. INCLUYE BACHA DE ACERO INOXIDABLE, TODAS LAS PUERTAS SE ABREN Y SE CIERRAN, Viene con accesorios: 2 platitos, una tablita, cuchillo, tenedor, espátula y cuchara, Bordes redondeados para cuidar y proteger a los chicos",
       precio: 
-      8.399,
+      8399,
       foto: "../assets/cocinita.png"
     },
     {

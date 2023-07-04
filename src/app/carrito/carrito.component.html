@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <h1 class="border-bottom border-secondary text-center mt-3 mb-3">CARRITO</h1>
+    <table class="table table-dark table-striped table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">Cod</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio unitario</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let juguete of listaJuguetesCarrito">
+                <td>{{juguete.cod}}</td>
+                <td>{{juguete.nombre}}</td>
+                <td>${{juguete.precio}}</td>
+                <td>{{juguete.cantidad}}</td>
+                <td>${{juguete.precio! * juguete.cantidad!}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-danger mb-3" (click)="vaciarCarrito()">Vaciar carrito</button>
+</div>

@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { JuguetesComponent } from './juguetes/juguetes.component';
 import { JugueteComponent } from './juguete/juguete.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'nosotros',
     component: NosotrosComponent
+  },
+  {
+    path: 'carrito',
+    component: CarritoComponent
   },
   {
     path: 'juguetes/:id',
@@ -49,7 +54,8 @@ const routes: Routes = [
     HomeComponent,
     NavegacionComponent,
     JuguetesComponent,
-    JugueteComponent
+    JugueteComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
